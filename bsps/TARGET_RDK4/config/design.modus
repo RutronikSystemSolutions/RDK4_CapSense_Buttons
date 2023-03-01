@@ -109,24 +109,12 @@
                         <Param id="portLevelConfig" value="false"/>
                     </Personality>
                 </Block>
-                <Block location="ioss[0].port[10].pin[0]">
-                    <Alias value="ARD_ADC1"/>
-                </Block>
-                <Block location="ioss[0].port[10].pin[1]">
-                    <Alias value="ARD_ADC2"/>
-                </Block>
-                <Block location="ioss[0].port[10].pin[2]">
-                    <Alias value="ARD_ADC3"/>
-                </Block>
-                <Block location="ioss[0].port[10].pin[3]">
-                    <Alias value="ARD_ADC4"/>
-                </Block>
-                <Block location="ioss[0].port[10].pin[4]">
-                    <Alias value="ARD_ADC5"/>
-                </Block>
-                <Block location="ioss[0].port[10].pin[5]">
-                    <Alias value="ARD_ADC6"/>
-                </Block>
+                <Block location="ioss[0].port[10].pin[0]"/>
+                <Block location="ioss[0].port[10].pin[1]"/>
+                <Block location="ioss[0].port[10].pin[2]"/>
+                <Block location="ioss[0].port[10].pin[3]"/>
+                <Block location="ioss[0].port[10].pin[4]"/>
+                <Block location="ioss[0].port[10].pin[5]"/>
                 <Block location="ioss[0].port[11].pin[0]">
                     <Alias value="ARD_IO1"/>
                 </Block>
@@ -156,6 +144,24 @@
                 </Block>
                 <Block location="ioss[0].port[1].pin[1]">
                     <Alias value="KITPROG_TX"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[0]">
+                    <Alias value="ARD_ADC1"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[1]">
+                    <Alias value="ARD_ADC2"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[2]">
+                    <Alias value="ARD_ADC3"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[3]">
+                    <Alias value="ARD_ADC4"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[4]">
+                    <Alias value="ARD_ADC5"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[5]">
+                    <Alias value="ARD_ADC6"/>
                 </Block>
                 <Block location="ioss[0].port[3].pin[0]">
                     <Alias value="ARD_UART_RX"/>

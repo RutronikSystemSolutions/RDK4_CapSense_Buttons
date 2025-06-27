@@ -563,6 +563,9 @@
                 </Personality>
                 <Personality template="m0s8lfclk" version="1.0">
                     <Block location="srss[0].clock[0].lfclk[0]" locked="true"/>
+                    <Parameters>
+                        <Param id="sourceClock" value="ILO"/>
+                    </Parameters>
                 </Personality>
                 <Personality template="m0s8pumpclk" version="2.0">
                     <Block location="srss[0].clock[0].pumpclk[0]" locked="true"/>
@@ -580,6 +583,9 @@
                     <Block location="srss[0].power[0]" locked="true"/>
                     <Parameters>
                         <Param id="AmuxPumpEn" value="false"/>
+                        <Param id="HVBodEn" value="false"/>
+                        <Param id="VccOVDEn" value="false"/>
+                        <Param id="VddOVDEn" value="false"/>
                         <Param id="deepsleepLatency" value="0"/>
                         <Param id="idlePwrMode" value="CY_CFG_PWR_MODE_DEEPSLEEP"/>
                         <Param id="vddaMv" value="5000"/>

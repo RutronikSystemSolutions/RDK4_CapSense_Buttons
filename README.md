@@ -2,18 +2,18 @@
 
 Rutronik Development Kit 3 Programmable System-on-Chip CY8C4149AZE-S598 "CAPSENSE Buttons" Code Example. 
 
-This code example demonstrates the CAPSENSE™ buttons that are working in CSX mode.
+This code example demonstrates CAPSENSE™ buttons operating in CSX mode.
 
  <img src="images/rdk4_top.jpg" style="zoom:20%;" />
 
 ## Requirements
 
-- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v2025.4.0
+- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v3.7
 - The latest hardware release [RDK4 Rev2](https://github.com/RutronikSystemSolutions/RDK4_Hardware_Files).
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -50,9 +50,9 @@ For more details, see the [Eclipse IDE for ModusToolbox&trade; software user gui
 
 The firmware example uses a KitProg3 UART for debugging output and KitProg3 I2C for communication with a "CapSense Tuner" software. Only one peripheral may be used at a time. Use your preferred terminal software to track the debug output or simply load a ModusToolbox™ native "Terminal" tool.
 
-The code example initializes the CAPSENSE™ peripheral and also the library that enables communication with a "CapSense Tuner" software via I2C. 
+The code example initialises the CAPSENSE™ peripheral and also the library that enables communication with a "CapSense Tuner" software via I2C. 
 
-There are 3 CAPSENSE™ buttons CSB1, CSB2, and CSB3 onboard. After the firmware has started successfully the touch on any of the buttons should turn on and off the corresponding Red, Green or Blue LEDs in a D10 RGB LED package.
+There are 3 CAPSENSE™ buttons CSB1, CSB2, and CSB3 onboard. After the firmware starts, successfully pressing any of the buttons should turn the corresponding Red, Green, or Blue LEDs on or off in a D10 RGB LED package.
 
 <img src="images/debug_output.png" style="zoom:100%;" />
 
@@ -60,19 +60,19 @@ Launch the "CapSense Tuner" from the **Quick Panel** Tools section and select th
 
 <img src="images/i2c_select.png" style="zoom:100%;" />
 
-Click on **Connect** and **Start** to establish the connection via I2C. Select all the slider sensors to be monitored in **Widget Explorer**.
+Click **Connect** and **Start** to establish the I2C connection. Select all the slider sensors to be monitored in **Widget Explorer**.
 
 <img src="images/tunning.png" style="zoom:100%;" />
 
 ### Debugging
 
-If you successfully have imported the example, the debug configurations are already prepared to use with the KitProg3 or MiniProg4. Open the ModusToolbox™ perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3 or MiniProg4. Open the ModusToolbox™ perspective and find the Quick Panel. Click the desired debug launch configuration, then wait for programming to complete and debugging to start.
 
 <img src="images/debug_start.png" style="zoom:100%;" />
 
 #### SBC Development Mode
 
-A special mode, called SBC Development Mode, is available during software development or debugging of the system. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
+A special mode, called SBC Development Mode, is available for software development or system debugging. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
 
 ## Legal Disclaimer
 
